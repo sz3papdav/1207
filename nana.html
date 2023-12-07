@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejegyzés létrehozása</title>
+    <link rel="stylesheet" href="nana.css">
+</head>
+<body>
+
+<h1>Bejegyzés létrehozása</h1>
+
+<form id="postForm">
+    <label for="title">Cím:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="body">Szöveg:</label>
+    <input type="text" id="body" name="body" required>
+
+    <label for="userId">Felhasználó:</label>
+    <select id="userId" name="userId" required></select>
+
+    <button type="button" onclick="createPost()">Bejegyzés létrehozása</button>
+</form>
+
+<h2 id="postDetails">Bejegyzés részletei</h2>
+<ol id="postDetailsList"></ol>
+
+<pre id="postResponse"></pre>
+</body>
+<script src="nana.js"></script>
+</html>
